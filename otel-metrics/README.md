@@ -1,19 +1,11 @@
-Source file and commands for [ Implementing Distributed Tracing in Golang with OpenTelemetry ](https://youtu.be/7C59tF2sjuo)
-
-[![ Implementing Distributed Tracing in Golang with OpenTelemetry  Youtube Video Link](https://img.youtube.com/vi/7C59tF2sjuo/0.jpg)](https://www.youtube.com/watch?v=7C59tF2sjuo)
+Source file for Metrics Newsletter
 
 ## Docker Scripts
 
-### Run Postgres
+### Run Docker Compose
 
 ```
-docker run --name some-postgres -e POSTGRES_PASSWORD=mysecretpassword -p 5432:5432 -d postgres
-```
-
-### Run OpenTelemetry and Jaeger
-
-```
-docker run --rm --name jaeger -e COLLECTOR_ZIPKIN_HTTP_PORT=9411 -p 16686:16686 -p 4318:4318 jaegertracing/all-in-one:1.56
+docker-compose up
 ```
 
 ## DB Scripts
